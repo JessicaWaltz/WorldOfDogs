@@ -24,6 +24,10 @@ function handleSubmit(dispatch){
 }
 
 function Submit(props){
+    console.log("Submit dispatch");
+    console.log(props.dispatch);
+    console.log("Submit Props");
+    console.log(props);
     return(
         <form action="" onSubmit={handleSubmit(props.dispatch)}>               
         <input type="text" name="name"/>
@@ -37,5 +41,5 @@ function Submit(props){
 }
 Submit.propTypes = {
     dispatch: PropTypes.func,
-  }
+}
 export default connect(null)(Submit);
