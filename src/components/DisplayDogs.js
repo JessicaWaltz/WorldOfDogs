@@ -34,8 +34,6 @@ function displayAllDogs(allDogs,dispatch){
 }
 // onClick={() => {
 function DisplayDogs(props){
-        console.log("display props");
-        console.log(props)
         return( 
         <div>
             dogs will be here:
