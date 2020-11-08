@@ -1,10 +1,12 @@
+import searchDogs from '../components/searchDogs.js';
 import dogs from './dogs.js';
 /**
  * Sets the initial state of the list of dogs as
  * the list of dogs in dogs.js
  */
 const initialState = {
-    allDogs: dogs
+    allDogs: dogs,
+    searchedDogs: []
 };
 
 /**
@@ -26,16 +28,25 @@ function removeDog(theDogs,action){
         return "deleted";
 
     });
-    console.log("newDogs is");
-    console.log(newDogs);
     var index = newDogs.indexOf("deleted");
-    console.log(index);
     newDogs.splice(index,1);
-    console.log(newDogs);
     return newDogs;
 }
 function editDog(theDogs,action){
-    return theDogs;
+    var index=action.payload.index;
+    var newDogs= theDogs.map((dog,i)=>{
+        if(index === i){
+            return {
+                name: action.payload.name               || dog.name,
+                breed: action.payload.breed             || dog.breed,
+                owner: action.payload.owner             || dog.owner,
+                size: action.payload.size               || dog.size,
+                description: action.payload.description || dog.description
+            };
+        }
+        return dog;
+    });
+    return newDogs;
 }
 /**
  * 
@@ -58,15 +69,18 @@ const store = (state =initialState,action)=>{
             if(duplicateDogOwner){
                 //duplicate entry found
                 return {
+                    ...state,
                     allDogs: state.allDogs
                 }
             }
             return {
+                ...state,
                 allDogs: [...state.allDogs,action.payload]
             };
         case 'REMOVE_DOG':
             console.log("Remove was called");
             return{
+                ...state,
                 allDogs:removeDog(state.allDogs,action)
             };
         case 'EDIT_DOG':
@@ -74,6 +88,13 @@ const store = (state =initialState,action)=>{
                 ...state,
                 allDogs:editDog(state.allDogs,action)
             }
+        case 'SEARCH_DOG':
+            console.log("Search dog initiated");
+            console.log(action.payload.result);
+            return{
+                ...state,
+                searchedDogs: action.payload.result
+            };
         default:
             console.log("I dont know what call though");
             return state;
