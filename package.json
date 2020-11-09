@@ -1,6 +1,9 @@
 {
   "name": "dogs",
   "version": "0.1.0",
+  "engines":{
+    "node":"v14.11.0"
+  },
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.32",
