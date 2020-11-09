@@ -6,4 +6,15 @@
     grid-template-columns: repeat(3, minmax(0, 1fr));
     grid-gap: 10px;
 }
-
+.space{
+    padding:5px;
+    display:inline-block;
+}
+.button-div{
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+.card-description{
+    padding-bottom:15px;
+}

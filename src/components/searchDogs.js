@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import "../style/searchDogs.css";
@@ -31,14 +31,6 @@ function searchName(props,event){
             return "nothing";
         }
     })
-    /*var result = props.allDogs.map((dog,index) =>{
-        if((dogSearch === dog.name ||dogSearch === dog.breed || dogSearch === dog.size || dogSearch === dog.owner || dogSearch === dog.description)){
-            return dog;
-        }
-        else{
-            return "nothing";
-        }
-    })*/
     result = result.filter(data => data !== "nothing");
     console.log(result);
     return(
@@ -51,20 +43,6 @@ function searchName(props,event){
     )
     
 }
-/*
-function SearchDog(props){
-    return(
-        <div className="search-dog">
-            <div className="search-dog-info">
-                <h6>Search for a dog:</h6>
-                <form action="" className="search-dog-form" onSubmit={(event)=>{searchName(props,event)}}>               
-                    <input type="text" name="searching"/>         
-                    <input type="submit" value="Submit" />       
-                </form>
-            </div> 
-        </div>        
-    )
-}*/
 function SearchDog(props){
     return(
         <div className="search-dog">
@@ -103,7 +81,7 @@ function SearchDog(props){
                             <input type="text" className="form-control" id="dogDescription" placeholder="desctiption" name="description"></input>
                         </div>
                     </div>
-                    <input type="submit" value="Submit" />
+                    <input type="submit" className="btn btn-secondary" value="Search" />
                 </form>
             </div> 
         </div>        

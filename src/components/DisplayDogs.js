@@ -8,7 +8,13 @@ function mapStateToProps(state) {
         allDogs: state.allDogs
     }
 }
-
+/**
+const PER_PAGE = 10;
+const offset = currentPage * PER_PAGE;
+const currentPageData = data
+    .slice(offset, offset + PER_PAGE)
+    .map(({ thumburl }) => <img src={thumburl} />);
+const pageCount = Math.ceil(data.length / PER_PAGE); */
 function displayAllDogs(allDogs,dispatch){
     return(
     <div className="dog-cards">

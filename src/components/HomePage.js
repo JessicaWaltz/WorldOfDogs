@@ -9,17 +9,17 @@ class HomePage extends Component{
     render(){
         return(
         <div className="home-center">
-            <div className="home-dog-list jumbotron"onClick={()=>{this.goToPath('/view')}}>
+            <div className="home-dog-list jumbotron jumbotron-fluid"onClick={()=>{this.goToPath('/view')}}>
                 <div className="container home-dog-list-container">
                     <h1 className="display-4">VIEW DOGS</h1>
                 </div>
             </div>
-            <div className="home-dog-add jumbotron" onClick={()=>{this.goToPath('/add')}}>
+            <div className="home-dog-add jumbotron jumbotron-fluid" onClick={()=>{this.goToPath('/add')}}>
             <div className="container home-dog-add-container">
                     <h1 className="display-4">ADD A DOG</h1>
                 </div>
             </div>
-            <div className="home-dog-edit jumbotron"onClick={()=>{this.goToPath('/search')}}>
+            <div className="home-dog-edit jumbotron jumbotron-fluid"onClick={()=>{this.goToPath('/search')}}>
             <div className="container home-dog-edit-container">
                     <h1 className="display-4">SEARCH/EDIT DOGS</h1>
                 </div>

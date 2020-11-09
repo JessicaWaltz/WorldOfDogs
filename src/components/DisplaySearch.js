@@ -46,8 +46,9 @@ class DisplaySearch extends Component{
                             <h6 className="card-subtitle mb-2 text-muted">Owner: {dog.owner}</h6>
                             <h6 className="card-subtitle mb-2 text-muted">Size: {dog.size}</h6>
                             <h6 className="card-subtitle mb-2 text-muted">Breed: {dog.breed}</h6>
-                            <p className="card-text">{dog.description}</p>
-                            <Button className="btn btn-primary"onClick={()=> {dispatch({
+                            <p className="card-text card-description">{dog.description}</p>
+                            <div className="button-div">
+                            <Button className="btn btn-secondary card-btn"onClick={()=> {dispatch({
                                 type:"REMOVE_DOG",
                                 payload: {
                                     name: dog.name,
@@ -59,7 +60,9 @@ class DisplaySearch extends Component{
                                 this.setState({displayEdit: false})}}>
                                 <FontAwesomeIcon icon={faTrash} />
                             </Button>
-                            <Button className="btn btn-primary"onClick={()=>{this.handleEditClick(dog)}}><FontAwesomeIcon icon={faEdit} /></Button>
+                            <div className="space"></div>
+                            <Button className="btn btn-secondary"onClick={()=>{this.handleEditClick(dog)}}><FontAwesomeIcon icon={faEdit} /></Button>
+                            </div>
                         </div>
                     </div>
                 ))}
@@ -131,7 +134,7 @@ class DisplaySearch extends Component{
                         <input type="text" className="form-control" id="dogDescription" placeholder={this.state.description} name="description"></input>
                     </div>
                 </div>
-                <input type="submit" value="Submit" />
+                <input type="submit" className="btn btn-secondary"value="Edit" />
             </form>
             </div>
         )
