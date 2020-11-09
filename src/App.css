@@ -27,7 +27,7 @@ body{
   grid-area: info;
   position: absolute;
   bottom: 10px;
-  left: 0;
+  right: 10%;
 }
 div.nav-grid-options > div{
   display: inline;

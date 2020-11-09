@@ -70,7 +70,7 @@ class RandomDog extends Component{
     }
 }
 RandomDog.propTypes = {
-    handleRemove: PropTypes.func,
+    dispatch: PropTypes.func,
 }
 export default  connect(mapStateToProps)(RandomDog);
 /*

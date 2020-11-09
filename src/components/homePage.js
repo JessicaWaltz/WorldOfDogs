@@ -29,7 +29,12 @@ class HomePage extends Component{
             </div>
             <div className="home-dog-random jumbotron jumbotron-fluid"onClick={()=>{this.goToPath('/random')}}>
             <div className="container home-dog-random-container">
-                    <h1 className="display-4">RANDOM</h1>
+                    <h1 className="display-4">RANDOM DOG</h1>
+                </div>
+            </div>
+            <div className="home-dog-list jumbotron jumbotron-fluid"onClick={()=>{this.goToPath('/sort')}}>
+            <div className="container home-dog-list-container">
+                    <h1 className="display-4">SORT DOGS</h1>
                 </div>
             </div>
         </div>

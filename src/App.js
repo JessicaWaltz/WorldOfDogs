@@ -15,6 +15,7 @@ import HomePage from './components/homePage.js';
 import logo from "./img/dogLogo02.png";
 import RandomDog from "./components/randomDog.js";
 import NotFound from "./components/notFound.js";
+import SortDogs from "./components/sortDogs.js";
 
 function App() {
   return (
@@ -26,10 +27,13 @@ function App() {
               <div><Link to="/view" className="dont-link">VIEW</Link></div>
               <div><Link to="/add" className="dont-link">ADD</Link></div>
               <div><Link to="/search" className="dont-link">SEARCH</Link></div>
+              <div><Link to="/random" className="dont-link">RANDOM</Link></div>
+              <div><Link to="/sort" className="dont-link">SORT</Link></div>
             </div>
         </div>
         <Switch>
-          <Route exact={true} path="/" component={HomePage}>
+          <Route exact={true} path="/">
+            <HomePage/>
           </Route>
           <Route path="/view">
             <DisplayDogs/>
@@ -43,6 +47,9 @@ function App() {
           </Route>
           <Route path="/random">
             <RandomDog/>
+          </Route>
+          <Route path="/sort">
+            <SortDogs/>
           </Route>
           <Route path="/404">
             <NotFound/>
