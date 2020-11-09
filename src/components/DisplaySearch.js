@@ -120,7 +120,7 @@ class DisplaySearch extends Component{
                 
                     <div className="form-group col-md-2">
                         <label for="dogSize">Size:</label>
-                        <select id="inputState" className="form-control" name="size" value={this.state.size}>
+                        <select id="inputState" className="form-control" name="size" defaultValue={this.state.size}>
                             <option value="">select</option>
                             <option value="XS">XS</option>
                             <option value="SM">SM</option>
@@ -134,7 +134,10 @@ class DisplaySearch extends Component{
                         <input type="text" className="form-control" id="dogDescription" placeholder={this.state.description} name="description"></input>
                     </div>
                 </div>
-                <input type="submit" className="btn btn-secondary"value="Edit" />
+                <div className="form-row">
+                    <div className="form-group col-md-11"></div>
+                    <input type="submit" className="btn btn-secondary form-group col-md-1"value="Edit" />
+                </div>
             </form>
             </div>
         )

@@ -18,7 +18,8 @@ function searchName(props,event){
     const dogOwner = new FormData(event.currentTarget).get("owner");
     const dogSize = new FormData(event.currentTarget).get("size");
     const dogDesc = new FormData(event.currentTarget).get("description");
-    var result = props.allDogs.map((dog,index) =>{
+    document.getElementById("search-dog-form").reset();
+    var result = props.allDogs.map((dog) =>{
         if( (dogName === dog.name   || !dogName )       &&
             (dogBreed === dog.breed || !dogBreed)       &&
             (dogSize === dog.size   || !dogSize)        &&
@@ -32,7 +33,6 @@ function searchName(props,event){
         }
     })
     result = result.filter(data => data !== "nothing");
-    console.log(result);
     return(
     props.dispatch({
         type:"SEARCH_DOG",
@@ -81,7 +81,10 @@ function SearchDog(props){
                             <input type="text" className="form-control" id="dogDescription" placeholder="desctiption" name="description"></input>
                         </div>
                     </div>
-                    <input type="submit" className="btn btn-secondary" value="Search" />
+                    <div className="form-row">
+                        <div className="form-group col-md-11"></div>
+                        <input type="submit" className="btn btn-secondary form-group col-md-1" value="Search" />
+                    </div>
                 </form>
             </div> 
         </div>        

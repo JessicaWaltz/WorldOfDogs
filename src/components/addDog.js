@@ -65,7 +65,10 @@ function Submit(props){
                         <input type="text" className="form-control" id="dogDescription" placeholder="desctiption" name="description" ></input>
                     </div>
                 </div>
-                <input type="submit"className="btn btn-secondary" value="Add" />
+                <div className="form-row">
+                    <div className="form-group col-md-11"></div>
+                    <input type="submit"className="btn btn-secondary form-group col-md-1" value="Add" />
+                </div>
             </form>
             </div>
         </div>      

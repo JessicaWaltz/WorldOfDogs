@@ -5,7 +5,7 @@
     border: 1px solid lightgrey;
 }
 .search-dog-info{
-    margin: 20px;
+    margin: 20px 20px 0px 20px;
 }
 .edit-dog{
     margin: 10px 15% 10px 15%;
@@ -14,6 +14,6 @@
     border: 1px solid lightgrey;
 }
 .edit-dog-info{
-    margin: 20px;
+    margin: 20px 20px 0px 20px;
     
 }
