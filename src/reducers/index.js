@@ -1,4 +1,4 @@
-import searchDogs from '../components/SearchDogs.js';
+
 import dogs from './dogs.js';
 /**
  * Sets the initial state of the list of dogs as
