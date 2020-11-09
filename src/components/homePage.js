@@ -2,6 +2,9 @@ import '../style/HomePage.css';
 import React, { Component } from 'react';
 import bootstrap from "react-bootstrap";
 import {withRouter} from 'react-router-dom';
+/**
+ * Layout of the home page. Home page is displayed 
+ */
 class HomePage extends Component{
     goToPath(thePath) {
         this.props.history.push(thePath);
@@ -22,6 +25,11 @@ class HomePage extends Component{
             <div className="home-dog-edit jumbotron jumbotron-fluid"onClick={()=>{this.goToPath('/search')}}>
             <div className="container home-dog-edit-container">
                     <h1 className="display-4">SEARCH/EDIT DOGS</h1>
+                </div>
+            </div>
+            <div className="home-dog-random jumbotron jumbotron-fluid"onClick={()=>{this.goToPath('/random')}}>
+            <div className="container home-dog-random-container">
+                    <h1 className="display-4">RANDOM</h1>
                 </div>
             </div>
         </div>

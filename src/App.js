@@ -12,6 +12,7 @@ import {
 import Submit from './components/addDog.js';
 import HomePage from './components/homePage.js';
 import logo from "./img/dogLogo02.png";
+import RandomDog from "./components/randomDog.js";
 
 function App() {
   return (
@@ -37,6 +38,9 @@ function App() {
           <Route path="/search">
             <SearchDog/>
             <DisplaySearch/>
+          </Route>
+          <Route path="/random">
+            <RandomDog/>
           </Route>
         </Switch>
       </Router>

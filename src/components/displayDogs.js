@@ -2,19 +2,11 @@ import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import "../style/display.css";
-import ReactPaginate from 'react-paginate';
 function mapStateToProps(state) {
     return {
         allDogs: state.allDogs
     }
 }
-/**
-const PER_PAGE = 10;
-const offset = currentPage * PER_PAGE;
-const currentPageData = data
-    .slice(offset, offset + PER_PAGE)
-    .map(({ thumburl }) => <img src={thumburl} />);
-const pageCount = Math.ceil(data.length / PER_PAGE); */
 function displayAllDogs(allDogs,dispatch){
     return(
     <div className="dog-cards">
