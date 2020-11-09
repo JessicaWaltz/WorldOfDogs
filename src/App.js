@@ -1,8 +1,8 @@
 import './App.css';
 import DisplayDogs from './components/displayDogs.js';
 import React from "react";
-import SearchDog from './components/SearchDogs.js';
 import DisplaySearch from './components/displaySearch.js'
+import SearchDog from './components/searchDogsComponent.js';
 import {
   BrowserRouter as Router,
   Switch,
