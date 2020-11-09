@@ -1,4 +1,4 @@
-import searchDogs from '../components/searchDogs.js';
+import searchDogs from '../components/SearchDogs.js';
 import dogs from './dogs.js';
 /**
  * Sets the initial state of the list of dogs as
@@ -9,18 +9,7 @@ const initialState = {
     searchedDogs: []
 };
 
-/**
- * 
- * @param {*} allDogs 
- * @param {*} action 
- */
 function removeDog(allDogs,action){
-    /*var allDogDuplicate = state.allDogs.map((dog)=>{
-                if(dog.name === action.payload.name && dog.owner === action.payload.owner){
-                    return true;
-                }
-                return false;
-            })*/
     var newDogs= allDogs.map((dog)=>{
         if(!(dog.name === action.payload.name && dog.owner === action.payload.owner)){
             return dog;
@@ -33,16 +22,8 @@ function removeDog(allDogs,action){
     return newDogs;
 }
 function editDog(allDogs,action){
+    var repeats = 0;
     var newDogs= allDogs.map((dog,i)=>{
-        /*if(index === i){
-            return {
-                name: action.payload.name               || dog.name,
-                breed: action.payload.breed             || dog.breed,
-                owner: action.payload.owner             || dog.owner,
-                size: action.payload.size               || dog.size,
-                description: action.payload.description || dog.description
-            };
-        }*/
         if(action.payload.oldName === dog.name && action.payload.oldOwner === dog.owner){
             return {
                 name: action.payload.name               || dog.name,
@@ -54,9 +35,16 @@ function editDog(allDogs,action){
         }
         return dog;
     });
-    console.log("the payload that made it to edit is: "+ action.payload);
-    console.log("the newDogs list is: "+ newDogs);
-    return newDogs;
+        //check to make sure the edit doesn't break the name-owner rule
+    newDogs.map((dog,i)=>{
+        if(action.payload.name === dog.name && action.payload.owner === dog.owner){
+            console.log("hi");
+            repeats++;
+        }
+     })
+     console.log(repeats);
+    if (repeats===2){return allDogs;}
+    else{return newDogs;}
 }
 function isDuplicate(allDogs,action){
      /*Because state.allDogs is an array of objects ,includes will not
@@ -69,11 +57,6 @@ function isDuplicate(allDogs,action){
     })
     return allDogDuplicate.includes(true);
 }
-/**
- * 
- * @param {*} state 
- * @param {*} action 
- */
 const store = (state =initialState,action)=>{
     console.log("a call was made");
     switch(action.type){
@@ -97,10 +80,11 @@ const store = (state =initialState,action)=>{
                 searchedDogs:removeDog(state.searchedDogs,action)
             };
         case 'EDIT_DOG':
+            console.log("this happened right?");
             return{
                 ...state,
                 allDogs:editDog(state.allDogs,action),
-                searchedDogs: editDog(state.searchedDogs,action)
+                searchedDogs: []
             }
         case 'SEARCH_DOG':
             console.log("Search dog initiated");

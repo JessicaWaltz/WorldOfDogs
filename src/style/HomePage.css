@@ -1,27 +1,27 @@
 .home-center{
     text-align: center;
-    padding: 0 20% 0 20%;
+    padding: 100px 20% 0 20%;
 }
 .jumbotron{
     height: 50vh;
 }
 .home-dog-list{
-    background-image: linear-gradient( rgba(255, 255, 255, 0.45),  rgba(255, 255, 255, 0.45)), url("../img/dogCollage06.jpg");
+    background-image: linear-gradient( rgba(255, 255, 255, 0.8),  rgba(255, 255, 255, 0.8)), url("../img/dogCollage06.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
 .home-dog-add{
-    background-image:  linear-gradient( rgba(255, 255, 255, 0.45),  rgba(255, 255, 255, 0.45)), url("../img/dogCollage04.jpg");
+    background-image:  linear-gradient( rgba(255, 255, 255, 0.8),  rgba(255, 255, 255, 0.8)), url("../img/dogCollage04.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
 .home-dog-edit{
-    background-image:  linear-gradient( rgba(255, 255, 255, 0.45),  rgba(255, 255, 255, 0.45)), url("../img/dogCollage05.jpg");
+    background-image:  linear-gradient( rgba(255, 255, 255, 0.8),  rgba(255, 255, 255, 0.8)), url("../img/dogCollage05.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
 .home-dog-list:hover{
-    background-image: linear-gradient( rgba(255, 255, 255, 0.45),  rgba(255, 255, 255, 0.45)), url("../img/dogCollage06.jpg");
+    background-image: linear-gradient( rgba(255, 255, 255, 0.8),  rgba(255, 255, 255, 0.8)), url("../img/dogCollage06.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     animation-name: listfade;
@@ -30,7 +30,7 @@
     cursor: pointer;
 }
 .home-dog-add:hover{
-    background-image:  linear-gradient( rgba(255, 255, 255, 0.45),  rgba(255, 255, 255, 0.45)), url("../img/dogCollage04.jpg");
+    background-image:  linear-gradient( rgba(255, 255, 255, 0.8),  rgba(255, 255, 255, 0.8)), url("../img/dogCollage04.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     animation-name: addfade;
@@ -40,7 +40,7 @@
 
 }
 .home-dog-edit:hover{
-    background-image:  linear-gradient( rgba(255, 255, 255, 0.45),  rgba(255, 255, 255, 0.45)), url("../img/dogCollage05.jpg");
+    background-image:  linear-gradient( rgba(255, 255, 255, 0.8),  rgba(255, 255, 255, 0.8)), url("../img/dogCollage05.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     animation-name: editfade;
@@ -55,108 +55,114 @@
 
 
 
+
+
+
+
+
+
 @keyframes listfade{
     0%{
-        background-image: linear-gradient( rgba(255, 255, 255, 0.45),  rgba(255, 255, 255, 0.45)), url("../img/dogCollage06.jpg");
+        background-image: linear-gradient( rgba(255, 255, 255, 0.8),  rgba(255, 255, 255, 0.8)), url("../img/dogCollage06.jpg");
     }
     10%{
-        background-image: linear-gradient( rgba(255, 255, 255, 0.425),  rgba(255, 255, 255, 0.425)), url("../img/dogCollage06.jpg");
+        background-image: linear-gradient( rgba(255, 255, 255, 0.775),  rgba(255, 255, 255, 0.775)), url("../img/dogCollage06.jpg");
     }
     20%{
-        background-image: linear-gradient( rgba(255, 255, 255, 0.4),  rgba(255, 255, 255, 0.4)), url("../img/dogCollage06.jpg");
+        background-image: linear-gradient( rgba(255, 255, 255, 0.75),  rgba(255, 255, 255, 0.75)), url("../img/dogCollage06.jpg");
     }
     30%{
-        background-image: linear-gradient( rgba(255, 255, 255, 0.375),  rgba(255, 255, 255, 0.375)), url("../img/dogCollage06.jpg");
+        background-image: linear-gradient( rgba(255, 255, 255, 0.725),  rgba(255, 255, 255, 0.725)), url("../img/dogCollage06.jpg");
     }
     40%{
-        background-image: linear-gradient( rgba(255, 255, 255, 0.35),  rgba(255, 255, 255, 0.35)), url("../img/dogCollage06.jpg");
+        background-image: linear-gradient( rgba(255, 255, 255, 0.7),  rgba(255, 255, 255, 0.7)), url("../img/dogCollage06.jpg");
     }
     50%{
-        background-image: linear-gradient( rgba(255, 255, 255, 0.325),  rgba(255, 255, 255, 0.325)), url("../img/dogCollage06.jpg");
+        background-image: linear-gradient( rgba(255, 255, 255, 0.675),  rgba(255, 255, 255, 0.675)), url("../img/dogCollage06.jpg");
     }
     60%{
-        background-image: linear-gradient( rgba(255, 255, 255, 0.3),  rgba(255, 255, 255, 0.3)), url("../img/dogCollage06.jpg");
+        background-image: linear-gradient( rgba(255, 255, 255, 0.65),  rgba(255, 255, 255, 0.65)), url("../img/dogCollage06.jpg");
     }
     70%{
-        background-image: linear-gradient( rgba(255, 255, 255, 0.275),  rgba(255, 255, 255, 0.275)), url("../img/dogCollage06.jpg");
+        background-image: linear-gradient( rgba(255, 255, 255, 0.625),  rgba(255, 255, 255, 0.625)), url("../img/dogCollage06.jpg");
     }
     80%{
-        background-image: linear-gradient( rgba(255, 255, 255, 0.25),  rgba(255, 255, 255, 0.25)), url("../img/dogCollage06.jpg");
+        background-image: linear-gradient( rgba(255, 255, 255, 0.6),  rgba(255, 255, 255, 0.6)), url("../img/dogCollage06.jpg");
     }
     90%{
-        background-image: linear-gradient( rgba(255, 255, 255, 0.225),  rgba(255, 255, 255, 0.225)), url("../img/dogCollage06.jpg");
+        background-image: linear-gradient( rgba(255, 255, 255, 0.575),  rgba(255, 255, 255, 0.575)), url("../img/dogCollage06.jpg");
     }
     100%{
-        background-image: linear-gradient( rgba(255, 255, 255, 0.2),  rgba(255, 255, 255, 0.2)), url("../img/dogCollage06.jpg");
+        background-image: linear-gradient( rgba(255, 255, 255, 0.55),  rgba(255, 255, 255, 0.55)), url("../img/dogCollage06.jpg");
     }
 }
 @keyframes addfade{
     0%{
-        background-image: linear-gradient( rgba(255, 255, 255, 0.45),  rgba(255, 255, 255, 0.45)), url("../img/dogCollage04.jpg");
+        background-image: linear-gradient( rgba(255, 255, 255, 0.8),  rgba(255, 255, 255, 0.8)), url("../img/dogCollage04.jpg");
     }
     10%{
-        background-image: linear-gradient( rgba(255, 255, 255, 0.425),  rgba(255, 255, 255, 0.425)), url("../img/dogCollage04.jpg");
+        background-image: linear-gradient( rgba(255, 255, 255, 0.775),  rgba(255, 255, 255, 0.775)), url("../img/dogCollage04.jpg");
     }
     20%{
-        background-image: linear-gradient( rgba(255, 255, 255, 0.4),  rgba(255, 255, 255, 0.4)), url("../img/dogCollage04.jpg");
+        background-image: linear-gradient( rgba(255, 255, 255, 0.75),  rgba(255, 255, 255, 0.75)), url("../img/dogCollage04.jpg");
     }
     30%{
-        background-image: linear-gradient( rgba(255, 255, 255, 0.375),  rgba(255, 255, 255, 0.375)), url("../img/dogCollage04.jpg");
+        background-image: linear-gradient( rgba(255, 255, 255, 0.725),  rgba(255, 255, 255, 0.725)), url("../img/dogCollage04.jpg");
     }
     40%{
-        background-image: linear-gradient( rgba(255, 255, 255, 0.35),  rgba(255, 255, 255, 0.35)), url("../img/dogCollage04.jpg");
+        background-image: linear-gradient( rgba(255, 255, 255, 0.7),  rgba(255, 255, 255, 0.7)), url("../img/dogCollage04.jpg");
     }
     50%{
-        background-image: linear-gradient( rgba(255, 255, 255, 0.325),  rgba(255, 255, 255, 0.325)), url("../img/dogCollage04.jpg");
+        background-image: linear-gradient( rgba(255, 255, 255, 0.675),  rgba(255, 255, 255, 0.675)), url("../img/dogCollage04.jpg");
     }
     60%{
-        background-image: linear-gradient( rgba(255, 255, 255, 0.3),  rgba(255, 255, 255, 0.3)), url("../img/dogCollage04.jpg");
+        background-image: linear-gradient( rgba(255, 255, 255, 0.65),  rgba(255, 255, 255, 0.65)), url("../img/dogCollage04.jpg");
     }
     70%{
-        background-image: linear-gradient( rgba(255, 255, 255, 0.275),  rgba(255, 255, 255, 0.275)), url("../img/dogCollage04.jpg");
+        background-image: linear-gradient( rgba(255, 255, 255, 0.625),  rgba(255, 255, 255, 0.625)), url("../img/dogCollage04.jpg");
     }
     80%{
-        background-image: linear-gradient( rgba(255, 255, 255, 0.25),  rgba(255, 255, 255, 0.25)), url("../img/dogCollage04.jpg");
+        background-image: linear-gradient( rgba(255, 255, 255, 0.6),  rgba(255, 255, 255, 0.6)), url("../img/dogCollage04.jpg");
     }
     90%{
-        background-image: linear-gradient( rgba(255, 255, 255, 0.225),  rgba(255, 255, 255, 0.225)), url("../img/dogCollage04.jpg");
+        background-image: linear-gradient( rgba(255, 255, 255, 0.575),  rgba(255, 255, 255, 0.575)), url("../img/dogCollage04.jpg");
     }
     100%{
-        background-image: linear-gradient( rgba(255, 255, 255, 0.2),  rgba(255, 255, 255, 0.2)), url("../img/dogCollage04.jpg");
+        background-image: linear-gradient( rgba(255, 255, 255, 0.55),  rgba(255, 255, 255, 0.55)), url("../img/dogCollage04.jpg");
     }
 }
 @keyframes editfade{
     0%{
-        background-image: linear-gradient( rgba(255, 255, 255, 0.45),  rgba(255, 255, 255, 0.45)), url("../img/dogCollage05.jpg");
+        background-image: linear-gradient( rgba(255, 255, 255, 0.8),  rgba(255, 255, 255, 0.8)), url("../img/dogCollage05.jpg");
     }
     10%{
-        background-image: linear-gradient( rgba(255, 255, 255, 0.425),  rgba(255, 255, 255, 0.425)), url("../img/dogCollage05.jpg");
+        background-image: linear-gradient( rgba(255, 255, 255, 0.775),  rgba(255, 255, 255, 0.775)), url("../img/dogCollage05.jpg");
     }
     20%{
-        background-image: linear-gradient( rgba(255, 255, 255, 0.4),  rgba(255, 255, 255, 0.4)), url("../img/dogCollage05.jpg");
+        background-image: linear-gradient( rgba(255, 255, 255, 0.75),  rgba(255, 255, 255, 0.75)), url("../img/dogCollage05.jpg");
     }
     30%{
-        background-image: linear-gradient( rgba(255, 255, 255, 0.375),  rgba(255, 255, 255, 0.375)), url("../img/dogCollage05.jpg");
+        background-image: linear-gradient( rgba(255, 255, 255, 0.725),  rgba(255, 255, 255, 0.725)), url("../img/dogCollage05.jpg");
     }
     40%{
-        background-image: linear-gradient( rgba(255, 255, 255, 0.35),  rgba(255, 255, 255, 0.35)), url("../img/dogCollage05.jpg");
+        background-image: linear-gradient( rgba(255, 255, 255, 0.7),  rgba(255, 255, 255, 0.7)), url("../img/dogCollage05.jpg");
     }
     50%{
-        background-image: linear-gradient( rgba(255, 255, 255, 0.325),  rgba(255, 255, 255, 0.325)), url("../img/dogCollage05.jpg");
+        background-image: linear-gradient( rgba(255, 255, 255, 0.675),  rgba(255, 255, 255, 0.675)), url("../img/dogCollage05.jpg");
     }
     60%{
-        background-image: linear-gradient( rgba(255, 255, 255, 0.3),  rgba(255, 255, 255, 0.3)), url("../img/dogCollage05.jpg");
+        background-image: linear-gradient( rgba(255, 255, 255, 0.65),  rgba(255, 255, 255, 0.65)), url("../img/dogCollage05.jpg");
     }
     70%{
-        background-image: linear-gradient( rgba(255, 255, 255, 0.275),  rgba(255, 255, 255, 0.275)), url("../img/dogCollage05.jpg");
+        background-image: linear-gradient( rgba(255, 255, 255, 0.625),  rgba(255, 255, 255, 0.625)), url("../img/dogCollage05.jpg");
     }
     80%{
-        background-image: linear-gradient( rgba(255, 255, 255, 0.25),  rgba(255, 255, 255, 0.25)), url("../img/dogCollage05.jpg");
+        background-image: linear-gradient( rgba(255, 255, 255, 0.6),  rgba(255, 255, 255, 0.6)), url("../img/dogCollage05.jpg");
     }
     90%{
-        background-image: linear-gradient( rgba(255, 255, 255, 0.225),  rgba(255, 255, 255, 0.225)), url("../img/dogCollage05.jpg");
+        background-image: linear-gradient( rgba(255, 255, 255, 0.575),  rgba(255, 255, 255, 0.575)), url("../img/dogCollage05.jpg");
     }
     100%{
-        background-image: linear-gradient( rgba(255, 255, 255, 0.2),  rgba(255, 255, 255, 0.2)), url("../img/dogCollage05.jpg");
+        background-image: linear-gradient( rgba(255, 255, 255, 0.55),  rgba(255, 255, 255, 0.55)), url("../img/dogCollage05.jpg");
     }
 }

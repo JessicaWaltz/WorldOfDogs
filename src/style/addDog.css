@@ -1,0 +1,10 @@
+.add-dog{
+    margin: 100px 15% 10px 15%;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+}
+.add-dog-info{
+    margin: 20px;
+    
+}

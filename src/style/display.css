@@ -1,0 +1,9 @@
+.dog-cards{
+    margin: 100px 15% 5% 15%;
+    z-index: -1;
+    display: grid;
+    grid-template-areas: "a a a";
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-gap: 10px;
+}
+

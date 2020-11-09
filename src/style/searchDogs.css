@@ -1,0 +1,19 @@
+.search-dog{
+    margin: 100px 15% 10px 15%;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+}
+.search-dog-info{
+    margin: 20px;
+}
+.edit-dog{
+    margin: 10px 15% 10px 15%;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+}
+.edit-dog-info{
+    margin: 20px;
+    
+}
