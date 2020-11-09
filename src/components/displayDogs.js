@@ -27,7 +27,6 @@ function displayAllDogs(allDogs,dispatch){
 function DisplayDogs(props){
         return( 
         <div>
-            dogs will be here:
             {displayAllDogs(props.allDogs,props.dispatch)}
         </div>
         )

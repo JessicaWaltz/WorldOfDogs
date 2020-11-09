@@ -7,12 +7,14 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
+  Link,
+  Redirect
 } from 'react-router-dom';
 import Submit from './components/addDog.js';
 import HomePage from './components/homePage.js';
 import logo from "./img/dogLogo02.png";
 import RandomDog from "./components/randomDog.js";
+import NotFound from "./components/notFound.js";
 
 function App() {
   return (
@@ -42,7 +44,12 @@ function App() {
           <Route path="/random">
             <RandomDog/>
           </Route>
+          <Route path="/404">
+            <NotFound/>
+          </Route>
+          <Redirect to="/404"></Redirect>
         </Switch>
+        
       </Router>
     </div>
   );
