@@ -17,8 +17,9 @@ class SortDogs extends Component{
     }
     returnSortedDogs(sort,allDogs){
         var newDogs =[];
-        var d1Size=0;
-        var d2Size=0;
+        const dogSizes = {
+            XS: 0, SM: 1, MD: 2, LG: 3, XL: 4,
+        };
         if(sort === "name" || sort === "owner" || sort === "breed" || sort === "description"){
             newDogs = allDogs.sort(function(dog1,dog2){
                 if (dog1[sort] > dog2[sort]){ 
@@ -29,86 +30,9 @@ class SortDogs extends Component{
                 } 
             });
         } 
-        /*else if(sort==="name"){
-            newDogs = allDogs.sort(function(dog1,dog2){
-                if (dog1.name > dog2.name){ 
-                    return 1;
-                }
-                else{
-                    return -1;
-                } 
-            });
-        }
-        else if(sort === "owner"){
-            newDogs = allDogs.sort(function(dog1,dog2){
-                if (dog1.owner > dog2.owner){ 
-                    return 1;
-                }
-                else{
-                    return -1;
-                } 
-            });
-        }
-        else if(sort === "breed"){
-            newDogs = allDogs.sort(function(dog1,dog2){
-                if (dog1.breed > dog2.breed){ 
-                    return 1;
-                }
-                else{
-                    return -1;
-                } 
-            });
-        }
-        else if(sort === "description"){
-            newDogs = allDogs.sort(function(dog1,dog2){
-                if (dog1.description > dog2.description){ 
-                    return 1;
-                }
-                else{
-                    return -1;
-                } 
-            });
-        }*/
         else if(sort === "size"){
             newDogs = allDogs.sort(function(dog1,dog2){
-                if(dog1.size==="XS"){
-                    d1Size=0;
-                }
-                else if(dog1.size==="SM"){
-                    d1Size=1;
-                }
-                else if(dog1.size==="MD"){
-                    d1Size=2;
-                }
-                else if(dog1.size==="LG"){
-                    d1Size=3;
-                }
-                else if(dog1.size==="XL"){
-                    d1Size=4;
-                }
-
-
-
-                if(dog2.size==="XS"){
-                    d2Size=0;
-                }
-                else if(dog2.size==="SM"){
-                    d2Size=1;
-                }
-                else if(dog2.size==="MD"){
-                    d2Size=2;
-                }
-                else if(dog2.size==="LG"){
-                    d2Size=3;
-                }
-                else if(dog2.size==="XL"){
-                    d2Size=4;
-                }
-
-
-
-
-                if (d1Size > d2Size){ 
+                if (dogSizes[dog1.size] > dogSizes[dog2.size]){ 
                     return 1;
                 }
                 else{
