@@ -19,7 +19,17 @@ class SortDogs extends Component{
         var newDogs =[];
         var d1Size=0;
         var d2Size=0;
-        if(sort==="name"){
+        if(sort === "name" || sort === "owner" || sort === "breed" || sort === "description"){
+            newDogs = allDogs.sort(function(dog1,dog2){
+                if (dog1[sort] > dog2[sort]){ 
+                    return 1;
+                }
+                else{
+                    return -1;
+                } 
+            });
+        } 
+        /*else if(sort==="name"){
             newDogs = allDogs.sort(function(dog1,dog2){
                 if (dog1.name > dog2.name){ 
                     return 1;
@@ -58,7 +68,7 @@ class SortDogs extends Component{
                     return -1;
                 } 
             });
-        }
+        }*/
         else if(sort === "size"){
             newDogs = allDogs.sort(function(dog1,dog2){
                 if(dog1.size==="XS"){
