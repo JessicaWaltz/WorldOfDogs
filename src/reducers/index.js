@@ -73,28 +73,23 @@ const store = (state =initialState,action)=>{
                 allDogs: [...state.allDogs,action.payload]
             };
         case 'REMOVE_DOG':
-            console.log("Remove was called");
             return{
                 ...state,
                 allDogs:removeDog(state.allDogs,action),
                 searchedDogs:removeDog(state.searchedDogs,action)
             };
         case 'EDIT_DOG':
-            console.log("this happened right?");
             return{
                 ...state,
                 allDogs:editDog(state.allDogs,action),
                 searchedDogs: []
             }
         case 'SEARCH_DOG':
-            console.log("Search dog initiated");
-            console.log(action.payload.result);
             return{
                 ...state,
                 searchedDogs: action.payload.result
             };
         default:
-            console.log("I dont know what call though");
             return state;
     }
 };
